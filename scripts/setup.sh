@@ -23,14 +23,14 @@ printf $success "\nTAK server setup script sponsored by CloudRF.com - \"The API 
 printf $info "\nStep 1. Download the official docker image as a zip file from https://tak.gov/products/tak-server \nStep 2. Place the zip file in this tak-server folder.\n"
 printf $warning "\nYou should install this as a user. Elevated privileges (sudo) are only required to clean up a previous install eg. sudo ./scripts/cleanup.sh\n"
 
-arch=$(dpkg --print-architecture)
+arch=$(uname -m)
 
 DOCKERFILE=docker-compose.yml
 
-if [ $arch == "arm64" ];
+if [ $arch == "aarch64" ];
 then
 	DOCKERFILE=docker-compose.arm.yml
-	printf "\nBuilding for arm64...\n" "info"
+	printf "\nBuilding for arm64 (aarch64)...\n" "info"
 fi
 
 
