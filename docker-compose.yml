@@ -17,10 +17,11 @@ services:
       dockerfile: ./docker/amd64/Dockerfile.takserver
     env_file:
       - .env
+    environment:
+      - TZ=Europe/Stockholm
     volumes:
       - "./tak:/opt/tak:z"
       - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
     ports:
       - "8443:8443"
       - "8444:8444"

@@ -62,6 +62,9 @@ dnf install -y \
 printf "$info" "\n[5/5] Enabling and starting Docker...\n"
 systemctl enable --now docker
 
+printf "$info" "\nAdding $SUDO_USER to docker group...\n"
+usermod -aG docker $SUDO_USER
+
 printf "$info" "\nVerifying installation...\n"
 docker --version
 docker compose version

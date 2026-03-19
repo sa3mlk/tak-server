@@ -17,6 +17,8 @@ services:
       dockerfile: ./docker/arm64/Dockerfile.takserver
     env_file:
       - .env
+    environment:
+      - TZ=Europe/Stockholm
     volumes:
       - "./tak:/opt/tak:z"
     ports:
