@@ -32,8 +32,8 @@ dnf install -y \
     vim \
     ca-certificates \
     curl \
-	java-21-openjdk \
-	java-21-openjdk-devel
+	java-25-openjdk \
+	java-25-openjdk-devel
 
 printf "$info" "\n[2/5] Removing potentially conflicting container packages...\n"
 dnf remove -y \
