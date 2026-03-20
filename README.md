@@ -30,6 +30,7 @@ Old releases are a security risk as they contain known vulnerabilities. For more
 | `takserver-docker-5.4-RELEASE-19.zip` | `522MB` | `9e6f3e3b61f8677b491d6ed15baf1813` | `2f3ced9b3e81c448e401b995f64566e7b888b991` |
 | `takserver-docker-5.4-RELEASE-106.zip` | `522MB` | `edce00ff13f8fdfb340e7e05eafc5454` | `7f7da1a58544b34e01576b99f8db59e1987cd96c` |
 | `takserver-docker-5.5-RELEASE-58.zip` | `531MB` | `6d362f234305b9a5e8f9245ef8f3e45d` | `7f0c07aa0ad7ff575c0278d734264e3e446ec93c` |
+| `takserver-docker-5.6-RELEASE-22.zip` | `561MB` | `cb9af3f64669caa660de6fb7656725dd` | `4047b6df06e01e824e3dedcf72c3d6ddadf02f67` |
 
 ## Requirements
 
